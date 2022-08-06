@@ -52,3 +52,67 @@ footer {
 .text-light {
   color: #747474;
 }
+
+.btn {
+  min-width: 250px;
+  height: 75px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2D76F9;
+  color: white;
+  border: 1px solid #2D76F9;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.btn__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+.btn:hover {
+  filter: brightness(1.2);
+}
+
+.btn-sm {
+  min-width: 175px;
+  height: 50px;
+  padding: 0 25px;
+  cursor: pointer;
+}
+.btn-sm__text {
+  font-size: 16px;
+}
+
+.btn-outline-blue {
+  background-color: #fff;
+  color: #2D76F9;
+  border: 1px solid #2D76F9;
+}
+.btn-outline-blue:hover {
+  background-color: #2D76F9;
+  color: #fff;
+  filter: none;
+  transition: 0.3s ease;
+}
+
+.btn-outline-white {
+  background-color: #2D76F9;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.btn-outline-white:hover {
+  background-color: #fff;
+  color: #2D76F9;
+  filter: none;
+  transition: 0.3s ease;
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #2D76F9;
+}
+.btn-white:hover {
+  filter: brightness(0.9);
+}
