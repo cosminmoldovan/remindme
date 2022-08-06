@@ -309,3 +309,58 @@ footer {
     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
   }
 }
+
+.features {
+  margin-top: 80px;
+  padding: 0 clamp(24px, 100px, 10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+@media (min-width: 1024px) {
+  .features {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.card__image {
+  width: 100px;
+  height: 100px;
+  background-color: #eef3ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+.card__info {
+  text-align: center;
+}
+.card__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.card__description {
+  color: #747474;
+  max-width: 35ch;
+  line-height: 1.8;
+}
+@media (min-width: 1024px) and (max-width: 1320px) {
+  .card {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 1024px) {
+  .card__info {
+    text-align: left;
+  }
+}
