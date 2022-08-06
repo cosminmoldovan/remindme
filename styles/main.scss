@@ -531,3 +531,90 @@ footer {
         }
     }
 }
+
+.testimonials {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 clamp(24px, 100px, 10%);
+
+    &__img {
+        display: none;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    @media (min-width:1024px) {
+        margin-top: 150px;
+        padding: 0;
+        padding-right: clamp(24px, 100px, 10%);
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 80px;
+
+        &__img {
+            width: 50%;
+            display: block;
+            background-color: #eef3ff;
+            border-radius: 0 100px 100px 0;
+            padding-right: 50px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &__msg {
+        max-width: 40ch;
+    }
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+
+    &__controls {
+        display: flex;
+        gap: 25px;
+    }
+
+    &__btn {
+        width: 42px;
+        height: 42px;
+    }
+}
+
+.profile {
+    display: flex;
+    gap: 30px;
+
+    &__img {
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    &__name {
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    &__occupation {
+        font-size: 14px;
+        color: $text-color-secondary;
+    }
+}
