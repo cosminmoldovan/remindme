@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 * {
   padding: 0;
@@ -545,4 +546,54 @@ footer {
 .profile__occupation {
   font-size: 14px;
   color: #747474;
+}
+
+.footer {
+  margin: 100px auto;
+  padding: 0 clamp(24px, 100px, 10%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.footer .heading-2 {
+  margin-bottom: 25px;
+}
+.footer__logo {
+  margin-bottom: 25px;
+}
+.footer__logo img {
+  transform: scale(1.5);
+  transform-origin: left;
+}
+.footer_about {
+  max-width: 35ch;
+}
+.footer__list {
+  list-style: none;
+  color: #747474;
+}
+.footer__item::before {
+  content: "•";
+  color: #2D76F9;
+  margin-right: 8px;
+}
+.footer__link {
+  color: #747474;
+}
+.footer__link:hover {
+  color: #2D76F9;
+  text-decoration: underline;
+}
+.footer__social__cta {
+  display: flex;
+  gap: 40px;
+}
+.footer__social__cta a:hover {
+  filter: brightness(1.2);
+}
+@media (min-width: 1024px) {
+  .footer {
+    margin-top: 200px;
+    justify-content: space-between;
+  }
 }
