@@ -36,3 +36,40 @@ footer {
     max-width: 1600px;
     margin: 0 auto;
 }
+
+@mixin reset-list {
+    list-style: none;
+}
+
+@mixin btn-outline($bg, $outline) {
+    background-color: $bg;
+    color: $outline;
+    border: 1px solid $outline;
+
+    &:hover {
+        background-color: $outline;
+        color: $bg;
+        filter: none;
+        transition: 0.3s ease;
+    }
+}
+
+.heading-1 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.6;
+
+    @media (min-width:1024px) {
+        font-size: 36px;
+    }
+}
+
+.heading-2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.text-light {
+    color: $text-color-secondary;
+}
