@@ -434,3 +434,40 @@ footer {
     padding-left: clamp(24px, 100px, 10%);
   }
 }
+
+.download {
+  margin-top: 60px;
+  padding: 0 clamp(24px, 100px, 10%);
+}
+.download__banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-image: url("../images/download-bg-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px;
+  border-radius: 50px;
+}
+.download__text {
+  text-align: center;
+  color: white;
+}
+.download__cta {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@media (min-width: 1024px) {
+  .download {
+    margin-top: 150px;
+  }
+  .download__banner {
+    padding: 100px;
+  }
+  .download__cta {
+    flex-direction: row;
+    gap: 50px;
+  }
+}
