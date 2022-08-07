@@ -1,2 +1,2 @@
-# <p align="center"><img src="./images/logo.svg" height="52"/></p><p align="center">Responsive Landing Page for Mobile App<p>
+# <p align="center"><img src="./images/logo.svg" height="52"/></p><p align="center"><sup>Responsive Landing Page for Mobile App</sup><p>
 <p align="center"><img src="./images/remindme-thumbnail.png" width="80%"/></p>
