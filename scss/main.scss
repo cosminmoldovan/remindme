@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-$text-color-primary: #212121;
+$text-color-primary: #333333;
 $text-color-secondary: #747474;
 $accent-color: #2D76F9;
 
@@ -21,7 +21,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.6;
     color: $text-color-primary;
 }
@@ -55,19 +55,13 @@ footer {
 }
 
 .heading-1 {
-    font-size: 24px;
+    font-size: 23px;
     font-weight: 600;
-    line-height: 1.6;
+    line-height: 1.4;
 
     @media (min-width:1024px) {
-        font-size: 36px;
+        font-size: 32px;
     }
-}
-
-.heading-2 {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.6;
 }
 
 .text-light {
@@ -86,10 +80,9 @@ footer {
     border: 1px solid $accent-color;
     border-radius: 100px;
     cursor: pointer;
-
     &__text {
         font-family: 'Poppins', sans-serif;
-        font-size: 18px;
+        font-size: 17px;
         font-weight: 500;
     }
 
@@ -103,10 +96,6 @@ footer {
     height: 50px;
     padding: 0 25px;
     cursor: pointer;
-
-    &__text {
-        font-size: 16px;
-    }
 }
 
 .btn-outline-blue {
@@ -185,9 +174,6 @@ footer {
     }
 
     &__link {
-        font-size: 18px;
-        font-weight: 400;
-
         &:hover {
             color: $accent-color;
         }
@@ -259,10 +245,8 @@ footer {
             margin-bottom: 40px;
         }
 
-        p {
-            font-size: 18px;
-            max-width: 50ch;
-            line-height: 1.6;
+        p {            
+            max-width: 45ch;
             color: $text-color-secondary;
         }
     }
@@ -389,9 +373,9 @@ footer {
     }
 
     &__title {
-        font-size: 24px;
+        font-size: 22px;
         font-weight: 600;
-        margin-bottom: 20px;
+        margin-bottom: 8px;
     }
 
     &__description {
@@ -399,16 +383,14 @@ footer {
         max-width: 35ch;
         line-height: 1.6;
     }
-
-    @media (min-width:1024px) and (max-width:1320px) {
-        align-items: flex-start;
-    }
-
     @media (min-width:1024px) {
+        align-items: flex-start;
         &__info {
             text-align: left;
         }
     }
+
+    
 }
 
 .advantages {
@@ -433,7 +415,6 @@ footer {
 
     &__image {
         width: 100%;
-
         img {
             width: 100%;
             height: auto;
@@ -450,8 +431,7 @@ footer {
 
     &__description {
         color: $text-color-secondary;
-        max-width: 50ch;
-        line-height: 1.6;
+        max-width: 45ch;
     }
 
     @media (min-width:1024px) {
@@ -578,6 +558,7 @@ footer {
 
     &__msg {
         max-width: 40ch;
+        color: $text-color-secondary;
     }
 }
 
@@ -620,29 +601,37 @@ footer {
 }
 
 .footer {
-    margin: 100px auto;
-    padding: 0 clamp(24px, 100px, 10%);
+    margin-top: 100px;
+    padding: 100px clamp(24px, 100px, 10%);
     display: flex;
     flex-wrap: wrap;
-    gap: 60px;
+    gap: 40px;
+    background-color: #eef3ff;
 
     .heading-2 {
-        margin-bottom: 25px;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+
     }
 
     &__logo {
         margin-bottom: 25px;
 
         img {
-            transform: scale(1.5);
+            transform: scale(1.2);
             transform-origin: left;
         }
     }
 
     &_about {
         max-width: 35ch;
+        font-size: 15px;
+        
     }
-
+    &__item{
+        font-size: 15px;
+    }
     &__list {
         list-style: none;
         color: $text-color-secondary;
@@ -656,6 +645,7 @@ footer {
 
     &__link {
         color: $text-color-secondary;
+        
     }
 
     &__link:hover {
@@ -665,7 +655,8 @@ footer {
 
     &__social__cta {
         display: flex;
-        gap: 40px;
+        align-items: center;
+        gap: 16px;
     }
 
     &__social__cta a:hover {
