@@ -3,3 +3,8 @@
 <h3>About</h3>
 <p>This is a responsive and modern landing page designed in Figma, with a focus on the UI. Developed using Sass features and BEM methodology.
 <p/>
+<code>html5</code>
+<code>css3</code>
+<code>sass</code>
+<code>bem-methodology</code>
+<code>modern-ui</code>
